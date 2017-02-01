@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <link href="style.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body ng-controller="controllerOne">
+
+<h2>Signup</h2>
+<input type="text" ng-model="username" placeholder="username">
+<input type="text" ng-model="password" placeholder="password">
+<button type="submit" ng-click="register()">Sign up</button>
+<h2>Login</h2>
+<input type="text" ng-model="existingUser" placeholder="username">
+<input type="text" ng-model="existingUserPassword" placeholder="password">
+<button type="submit" ng-click="signIn()">Login</button>
+<h2>Add some data</h2>
+<label>Latitude:</label>
+<input type="text" ng-model="coordinates.latitude">
+<label>Longitude:</label>
+<input type="text" ng-model="coordinates.longitude">
+<button type="submit" ng-click="writeUserData()">Submit</button>
+<!--<div map-lazy-load="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1hCEtRUrS6jPYMMHeSBoyaZDiTDyouyw">-->
+    <ng-map center="37,-122" zoom="4">
+        <marker position="{{position.latitude}}, {{position.longitude}}" ng-repeat="position in positions"title="Hello World!"></marker>
+    </ng-map>
+<!--</div>-->
+<script src="lib/angular/angular.js"></script>
+<script src="lib/angular-route/angular-route.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js"></script>
+<script src="lib/angularfire/dist/angularfire.min.js"></script>
+<script src="app.js"></script>
+<script src="lib/ngmap/build/scripts/ng-map.min.js"></script>
+<script src="lib/ngGeolocation/ngGeolocation.min.js"></script>
+<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyB1hCEtRUrS6jPYMMHeSBoyaZDiTDyouyw"></script>
+<!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1hCEtRUrS6jPYMMHeSBoyaZDiTDyouyw&callback=initMap"-->
+        <!--async defer></script>-->
+</body>
+</html>
