@@ -1,0 +1,12 @@
+<div class="login" ng-controller="registerLogInLogOut">
+      <form>
+        <div class="form-group">
+          <input type="text" ng-model="email" placeholder="email" ng-show="!loggedIn" autofocus>
+          <input type="password" ng-model="password" placeholder="password" ng-show="!loggedIn"> 
+          <button class="btn btn-default" type="submit" ng-click="logIn()" ng-show="!loggedIn">Login</button>
+          <br>
+          <div>{{badLogin}}</div>
+          <a href="/signup">Don't have an account? <strong>Signup</strong> ...</a>
+        </div>
+      </form>
+</div>

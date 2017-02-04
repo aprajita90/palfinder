@@ -1,0 +1,121 @@
+
+html,
+body {
+  height:100%; 
+  width:100%;
+  padding:0;
+  margin:0;
+}
+
+#map {
+  height:100%; 
+  width: 100%;
+}
+
+ng-map {
+  height:100%; 
+  width: 100%; 
+}
+
+/*<!-- Make the panel transparent http://stackoverflow.com/questions/24855438/transparent-bootstrap-panel -->*/
+.panel {
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  margin-bottom: 0px;
+  width: 100%;
+}
+
+.panel-body {
+  padding: 5px 15px;
+}
+
+.panel-transparent {
+    background: none;
+}
+
+.icon-message {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  z-index: 1;
+  margin-bottom: 20px;
+  width: 90%;
+}
+
+.login {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  padding: 10px 10px 0 10px;
+  width: 100%;
+  text-align: left;
+}
+
+.logout {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  padding: 10px 10px 0 10px;
+  width: 100%;
+  text-align: right;
+}
+
+.login input {
+  height: 40px; 
+  padding-left: 10px;
+  margin-right: 5px;
+}
+
+/*http://www.iconarchive.com/show/bubble-circle-2-icons-by-scafer31000/Message-icon.html*/
+button .sendMessage {
+  background: transparent;
+  background-image: url(../images/icon-message.png);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  margin: auto;
+  height: 100px;
+  width: 100px;
+  border: none;
+}
+
+.chat-window {
+  text-align: left;
+  height: 400px;
+  background-color: #dcdcdc;
+}
+
+.input-field {
+  float:bottom;
+}
+
+.input-field textarea {
+  width: 90%;
+}
+
+.chatCloseButton {
+  position: absolute; 
+  top: 0; 
+  right: 0; 
+  padding: 10px 20px 0 0;
+}
+
+.user-label {
+  margin-bottom: 30px;
+  font-size: 20px;
+  color: #fff;
+  text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000;
+}
+
+.map-wrapper {
+  position: relative;
+  height: calc(100vh - 4em - 64px);
+}
+
+.myMap {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}

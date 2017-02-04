@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+  <head>
+    <meta charset="UTF-8">
+    <title>PalFinder</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="styles/style.css">
+    <!-- load the dependencies -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js"></script>
+    <script src="bower_components/angularfire/dist/angularfire.js"></script>
+    <script src="bower_components/ngmap/build/scripts/ng-map.js"></script>
+    <script src="bower_components/ngGeolocation/ngGeolocation.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1hCEtRUrS6jPYMMHeSBoyaZDiTDyouyw"></script>
+    
+  </head>
+
+  <body>
+
+    <!-- <div class="login" ng-controller="registerLogInLogOut">
+      <form>
+        <div class="form-group">
+          <input type="text" ng-model="email" placeholder="email" ng-show="!loggedIn" autofocus>
+          <input type="password" ng-model="password" placeholder="password" ng-show="!loggedIn">
+          <button class="btn btn-action" type="submit" ng-click="register()" ng-show="!loggedIn">Sign up</button>
+          <button class="btn btn-default" type="submit" ng-click="logIn()" ng-show="!loggedIn">Login</button>
+          <button id="btnLogout" class="btn btn-action" type="submit" ng-click="logOut()" ng-show="loggedIn">Logout</button>
+          <br>
+          <div>{{badLogin}}</div>
+        </div>
+      </form>
+    </div> -->
+    
+    <!-- <div ng-view></div> -->
+
+   <!--  <div ng-controller="initializeMap" style="height:100%" class="map-wrapper">
+      <ng-map class="myMap" center="current-location" zoom="14" default-style="false">
+        <directions suppress-markers="true"></directions>
+        <div ng-repeat="(key, value) in userLocations" >
+          <marker position="{{value.coordinates.latitude}}, {{value.coordinates.longitude}}"></marker>
+          <custom-marker position="{{value.coordinates.latitude}}, {{value.coordinates.longitude}}">
+            <p class="user-label">{{value.username}}</p>
+          </custom-marker>
+        </div>
+      </ng-map>
+    </div>
+
+    <div ng-controller="watchCurrentUserLocation"></div>
+
+    <div ng-controller="chatterboxCtrl" ng-init="fetchMessage()"></div> -->
+    <!-- load the app scripts -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/services/config.js"></script>
+    <script src="scripts/services/factoryDatabaseAndAuth.js"></script>
+    <script src="scripts/services/factoryRunListeners.js"></script>
+    <script src="scripts/services/customDirectives.js"></script>
+    <script src="scripts/controllers/registerLoginLogout.js"></script>
+    <script src="scripts/controllers/initializeMap.js"></script>
+    <script src="scripts/controllers/watchCurrentLocation.js"></script>
+    <script src="scripts/controllers/chatterbox.js"></script>
+    
+  </body>
+</html>
